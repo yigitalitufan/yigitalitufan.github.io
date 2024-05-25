@@ -46,7 +46,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess !== secretNumber) {
     if (scoreNumber > 1) {
       document.querySelector(".score").textContent = scoreNumber -= 1;
-      displayMessage(guess > secretNumber ? "⬆️ TOO HIGH! " : "⬇️ TOO LOW! ");
+      displayMessage(guess > secretNumber ? "⬆️ Çok Fazla! " : "⬇️ Çok Az! ");
     } else {
       displayMessage("🤯YOU LOST THE GAME!");
       document.querySelector(".score").textContent = 0;
