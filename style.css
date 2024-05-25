@@ -39,6 +39,11 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.middle {
+  width: 35rem;
+  display: flex;
+  height: 35vh;
+}
 
 .right {
   width: 52rem;
