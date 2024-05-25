@@ -26,11 +26,11 @@ document.querySelector(".check").addEventListener("click", function () {
 
   //When there is no input
   if (!guess) {
-    displayMessage("🚷 NO NUMBER!");
+    displayMessage("🚷 Numara Yok!");
 
     //when player wins
   } else if (guess === secretNumber) {
-    displayMessage("✅ CORRECT!");
+    displayMessage("✅ DOĞRU!");
     document.querySelector(".number").textContent = secretNumber;
 
     document.querySelector("body").style.backgroundColor = "#60b347";
@@ -48,7 +48,7 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".score").textContent = scoreNumber -= 1;
       displayMessage(guess > secretNumber ? "⬆️ Çok Fazla! " : "⬇️ Çok Az! ");
     } else {
-      displayMessage("🤯YOU LOST THE GAME!");
+      displayMessage("🤯KAYBETTİN!");
       document.querySelector(".score").textContent = 0;
     }
   }
@@ -58,7 +58,7 @@ document.querySelector(".again").addEventListener("click", function () {
   scoreNumber = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-  displayMessage("Start guessing...");
+  displayMessage("Tahmin etmeye başla..");
   document.querySelector(".score").textContent = scoreNumber;
   document.querySelector(".number").textContent = "?";
   document.querySelector(".guess").value = "";
